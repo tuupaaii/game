@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>NutriCheck!</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython_stdlib.js"></script>
+</head>
+
+<body onload="brython()">
+  <div class="container">
+    <h1>NutriCheck!</h1>
+    <h2>Holaa Gizileys!🌟</h2>
+    <h3>Di sini, Gizileys bisa tau seberapa sehat makanan yang biasa kalian konsumsi nih!</h3>
+    <h3>Jawab pertanyaan-pertanyaan ini berdasarkan kebiasaan makan Gizileys yaa!</h3><br>
+
+    <form id="quiz-form">
+      <label>1. Apa yang biasa kamu makan saat sarapan?</label><br>
+      <select id="q1">
+        <option value="2">Sereal</option>
+        <option value="3">Nasi dan Lauk Pauk</option>
+        <option value="1">Junk Foods</option>
+        <option value="1">Gorengan</option>
+      </select><br><br>
+
+      <label>2. Apa yang biasa kamu makan di siang hari?</label><br>
+      <select id="q2">
+        <option value="1">Junk Foods</option>
+        <option value="3">Homemade Foods</option>
+      </select><br><br>
+
+      <label>3. Apa yang biasa kamu makan di malam hari?</label><br>
+      <select id="q3">
+        <option value="1">Mie Instan</option>
+        <option value="3">Nasi dan Lauk Pauk</option>
+        <option value="1">Seblak</option>
+      </select><br><br>
+
+      <label>4. Apakah kamu rutin meminum susu?</label><br>
+      <select id="q4">
+        <option value="3">Ya</option>
+        <option value="1">Tidak</option>
+      </select><br><br>
+
+      <button id="submit" type="button">Cek Giziku</button>
+    </form>
+
+    <p id="hasil"></p>
+  </div>
+
+  <!-- Nyambungin ke Python -->
+  <script type="text/python" src="game.py"></script>
+</body>
+</html>
